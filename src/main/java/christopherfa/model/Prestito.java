@@ -25,5 +25,6 @@ public class Prestito {
         this.dataRestituzionePrevista = dataInizio.plusDays(30);
     }
 
-    // Costruttore vuoto e Getter/Setter
+    public void setUtente(Utente utente) { this.utente = utente; }
+    public void setElementoPrestato(ElementoCatalogo elemento) { this.elementoPrestato = elemento; }
 }

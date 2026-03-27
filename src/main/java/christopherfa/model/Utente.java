@@ -18,4 +18,14 @@ public class Utente {
     private String numeroTessera;
 
 
+    public String getNumeroTessera() { return numeroTessera; }
+    public void setNumeroTessera(String numeroTessera) { this.numeroTessera = numeroTessera; }
+
+    public String getNome() { return nome; }
+    public void setNome(String nome) { this.nome = nome; }
+
+    public String getCognome() { return cognome; }
+    public void setCognome(String cognome) { this.cognome = cognome; }
+
+    public void setDataNascita(LocalDate dataNascita) { this.dataNascita = dataNascita; }
 }

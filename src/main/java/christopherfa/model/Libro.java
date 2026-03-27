@@ -9,4 +9,8 @@ public class Libro extends ElementoCatalogo {
 
     public Libro() {}
 
+    public void setAutore(String autore) { this.autore = autore; }
+    public void setGenere(String genere) { this.genere = genere; }
+
+    public String getAutore() { return autore; }
 }

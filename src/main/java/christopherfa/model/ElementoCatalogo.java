@@ -16,5 +16,10 @@ public abstract class ElementoCatalogo {
     private Integer annoPubblicazione;
     private Integer numeroPagine;
 
-    // Aggiungi Getter e Setter
+    public void setIsbn(String isbn) { this.isbn = isbn; }
+    public void setTitolo(String titolo) { this.titolo = titolo; }
+    public void setAnnoPubblicazione(Integer anno) { this.annoPubblicazione = anno; }
+    public void setNumeroPagine(Integer pagine) { this.numeroPagine = pagine; }
+
+    public String getTitolo() { return titolo; }
 }
