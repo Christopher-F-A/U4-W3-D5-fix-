@@ -23,6 +23,8 @@ public class CatalogoDAO {
         }
     }
 
+    // Ricerca per isbn
+
     public ElementoCatalogo findByIsbn(String isbn) {
         return em.createQuery("SELECT e FROM ElementoCatalogo e WHERE e.isbn = :i", ElementoCatalogo.class)
                 .setParameter("i", isbn)
@@ -35,4 +37,13 @@ public class CatalogoDAO {
                 .setParameter("a", autore)
                 .getResultList();
     }
+
+    // Ricerca per anno
+    public List<ElementoCatalogo> findByAnno(Integer anno) {
+        return em.createQuery("SELECT e FROM ElementoCatalogo e WHERE e.annoPubblicazione = :anno", ElementoCatalogo.class)
+                .setParameter("anno", anno)
+                .getResultList();
+    }
+    // Ricerca per titolo
+    // Ricerca prestiti scaduti
 }
